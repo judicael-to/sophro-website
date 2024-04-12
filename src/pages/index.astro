@@ -1,0 +1,88 @@
+---
+import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../layouts/Navbar.astro';
+import Footer from '../layouts/Footer.astro';
+
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<Navbar />
+		<section class="hero">
+			<div class="hero-text">
+				<h1 >Let Your Home Be Unique</h1>
+				<p>Find the perfect piece of furniture for your home</p>
+				<button>Contact</button>
+			</div>
+		</section>
+		<section class="realisation-container">
+			<article class="realisation-article">
+				<h3>Realisation</h3>
+				<p>Our furniture is made from the best materials and is designed to last a lifetime. We offer a wide range of styles and finishes to suit any taste. Whether you are looking for a classic piece or something more modern, we have something for everyone.</p>
+				<button>Read more</button>
+			</article>
+			<article class="realisation-article">
+					<h3>Realisation</h3>
+				<p>Our furniture is made from the best materials and is designed to last a lifetime. We offer a wide range of styles and finishes to suit any taste. Whether you are looking for a classic piece or something more modern, we have something for everyone.</p>
+				<button>Read more</button>
+			</article>
+			<article class="realisation-article">
+					<h3>Realisation</h3>
+				<p>Our furniture is made from the best materials and is designed to last a lifetime. We offer a wide range of styles and finishes to suit any taste. Whether you are looking for a classic piece or something more modern, we have something for everyone.</p>
+				<button>Read more</button>
+			</article>
+		</section>
+		<Footer />
+	</main>
+</Layout>
+
+<style>
+	.hero {
+    min-height: calc(100vh);
+		color: var(--accent-dark);
+    background-image: url('/images/peaceful.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+		font-family: 'DM Serif Display', serif;
+		font-style: italic;
+ }
+ 	.hero h1 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+	p {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+	.hero-text {
+		padding-top: 20%;
+		padding-left: 4rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; 
+		align-items: flex-start; 
+	}
+	button {
+		font-family: 'DM Serif Display', serif;
+		font-style: italic;
+		background-color: var(--yogourt);
+		border-radius: 2rem;
+		font-size: 1rem;
+		padding: 0.25rem 2rem;
+	}
+	h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	.realisation-container {
+		display: flex;
+		justify-content: space-around;
+		margin: 12rem 8rem;
+	}
+	.realisation-article {
+		padding: 2rem;
+		width: 33%;
+	}
+</style>
