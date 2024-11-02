@@ -1,0 +1,170 @@
+---
+// src/pages/about.astro
+import Layout from '../layouts/Layouts.astro';
+
+const certifications = [
+  { title: "Bien vieillir", date: "11/2024" },
+  { title: "Maternité", date: "10/2024" },
+  { title: "Emotion", date: "06/2024" },
+  { title: "Respiration et Présence à soi", date: "05/2024" },
+  { title: "Confiance en soi", date: "12/2023" },
+  { title: "Sommeil", date: "12/2023" },
+  { title: "Cohérence Cardiaque", date: "06/2023" }
+];
+---
+
+<Layout 
+  title="À propos | Johanne Chieu - Sophrologue"
+  description="Découvrez mon parcours, ma philosophie et mon approche de la sophrologie."
+>
+  <!-- Hero Section -->
+  <div class="relative py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <h1 class="text-4xl font-light mb-6">À propos de moi</h1>
+          <p class="text-lg text-gray-600 mb-4">
+            Sophrologue certifiée RNCP, je vous accompagne dans votre quête de bien-être 
+            et d'harmonie entre le corps et l'esprit.
+          </p>
+        </div>
+        <div class="md:w-1/2">
+          <img
+            src="images/johanne-profile.jpg"
+            class="rounded-lg shadow-lg"
+            width="500"
+            height="400"
+            decoding="async"
+            loading="lazy"
+            alt="Espace de consultation"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Parcours Professionnel -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-light mb-8">Mon parcours professionnel</h2>
+      <div class="prose prose-lg max-w-none">
+        <p class="mb-6">
+          Vingt-cinq années d'activité professionnelle en entreprise, dont dix ans dans le
+          département des ressources humaines, m'ont amenée à me tourner vers une voie
+          permettant de préserver la santé et de mieux gérer les pressions professionnelles.
+        </p>
+        <p class="mb-6">
+          La pratique régulière du yoga, de la méditation, de la respiration consciente au quotidien,
+          du qi gong, m'ont permis de développer une approche holistique du bien-être.
+        </p>
+        <p>
+          Cette reconversion professionnelle m'a conduite à me former en sophrologie durant 15 mois
+          à l'Académie de Sophrologie de Paris, aboutissant à l'obtention de ma certification RNCP
+          en juin 2024.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophie et Approche -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-light mb-8">Ma philosophie et mon approche</h2>
+      <div class="space-y-6 text-gray-600">
+        <p>
+          Avec la sophrologie, j'apprends à prendre les choses comme elles viennent sans
+          interpréter, sans jugement, sans a priori. Cette attitude permet de m'alléger, de gagner
+          du temps dans ma vie quotidienne.
+        </p>
+        <blockquote class="border-l-4 border-teal-600 pl-4 italic">
+          "La sophrologie me donne des méthodes et des outils basés sur la respiration spécifique,
+          la focalisation et les mouvements corporels pour cultiver le positif et développer un
+          Nouveau Regard sur ce qui m'entoure."
+        </blockquote>
+        <p>
+          Mon approche est centrée sur l'accompagnement personnalisé, tenant compte de vos
+          besoins spécifiques et de votre rythme d'évolution.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications et Formations -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-light mb-8">Certifications et formations</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl mb-4 text-teal-600">Certification principale</h3>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <p class="font-medium">Certification de Sophrologue RNCP</p>
+            <p class="text-gray-600">Juin 2024</p>
+            <p class="mt-2">Académie de Sophrologie de Paris</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl mb-4 text-teal-600">Spécialisations</h3>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <ul class="space-y-3">
+              {certifications.map(cert => (
+                <li class="flex justify-between items-center">
+                  <span>{cert.title}</span>
+                  <span class="text-gray-500 text-sm">{cert.date}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photos du Cabinet -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-light mb-8">Mon cabinet</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="relative h-80">
+          <img
+            src="images/cabinet-1.avif"
+            class="rounded-lg shadow-lg object-cover w-full h-full"
+            width="600"
+            height="400"
+            decoding="async"
+            loading="lazy"
+            alt="Espace de consultation"
+          />
+        </div>
+        <div class="md:col-span-2 mt-4">
+          <p class="text-center text-gray-600">
+            Un espace chaleureux et apaisant, conçu pour votre bien-être, 
+            situé au Plessis Robinson.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-teal-600 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl mb-6">Prêt à commencer votre voyage vers le mieux-être ?</h2>
+      <p class="mb-8 text-lg">
+        Prenez rendez-vous pour une séance découverte et discutons de vos objectifs.
+      </p>
+      <a 
+        href="/contact" 
+        class="inline-block px-8 py-4 bg-white text-teal-600 rounded-full hover:bg-gray-100 transition-colors duration-300"
+      >
+        Prendre rendez-vous
+      </a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Ajoutez des animations si souhaité */
+  .prose p {
+    line-height: 1.8;
+  }
+</style>

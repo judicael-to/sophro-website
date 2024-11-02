@@ -1,16 +1,151 @@
 ---
-
+// src/pages/index.astro
+import Layouts from '../layouts/Layouts.astro';
 ---
+<Layouts
+title="Johanne Chieu | Sophrologue à Le Plessis Robinson"
+description="Découvrez la sophrologie avec Johanne Chieu, sophrologue certifiée RNCP. Gestion du stress, sommeil, maternité et bien-être au Plessis Robinson.">
+  <!-- Hero Section -->
+  <section class="relative h-screen">
+    <div class="absolute inset-0">
+      <img 
+        src="/images/hero-zen.jpg" 
+        alt="Méditation et sérénité" 
+        class="w-full h-full object-cover brightness-75"
+      />
+    </div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-light text-center max-w-4xl leading-tight">
+        L'unité du corps et de l'esprit, pour s'ouvrir à plus grand que soi
+      </h1>
+      <p class="mt-6 text-xl md:text-2xl max-w-2xl text-center">
+        Découvrez le chemin vers l'harmonie intérieure grâce à la sophrologie
+      </p>
+      <a 
+        href="/contact" 
+        class="mt-8 px-8 py-4 bg-teal-600 hover:bg-teal-700 rounded-full transition-colors duration-300"
+      >
+        Prendre rendez-vous
+      </a>
+    </div>
+  </section>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  <!-- Présentation -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <img 
+          src="/images/johanne-profile.jpg" 
+          alt="Johanne Chieu" 
+          class="w-64 h-64 rounded-full object-cover"
+        />
+        <div>
+          <h2 class="text-3xl mb-6">Johanne Chieu</h2>
+          <p class="text-gray-600 mb-4">
+            Sophrologue certifiée RNCP, formée à l'Académie de Sophrologie de Paris. 
+            Forte de 25 années d'expérience en entreprise, j'ai choisi de me consacrer 
+            à l'accompagnement des personnes vers leur mieux-être.
+          </p>
+          <p class="text-teal-600 font-medium">
+            Certifiée en Sophrologie, Cohérence Cardiaque, et spécialisée dans 
+            l'accompagnement du bien-être et de la maternité.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Phares -->
+  <section class="py-20 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl text-center mb-12">Mes accompagnements</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="text-teal-600 mb-4">
+            <img class="w-12 h-12" src="images/stress.svg" />
+          </div>
+          <h3 class="text-xl font-medium mb-4">Gestion du Stress</h3>
+          <p class="text-gray-600 mb-6">
+            Apprenez à gérer votre stress et vos émotions grâce à des techniques 
+            éprouvées de sophrologie.
+          </p>
+          <a href="/services/stress" class="text-teal-600 hover:text-teal-700">
+            En savoir plus →
+          </a>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="text-teal-600 mb-4">
+            <img class="w-12 h-12" src="images/sleep.svg" />
+          </div>
+          <h3 class="text-xl font-medium mb-4">Sommeil & Récupération</h3>
+          <p class="text-gray-600 mb-6">
+            Retrouvez un sommeil réparateur et une meilleure qualité de vie au quotidien.
+          </p>
+          <a href="/services/sommeil" class="text-teal-600 hover:text-teal-700">
+            En savoir plus →
+          </a>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="text-teal-600 mb-4">
+            <img class="w-12 h-12" src="images/breath.svg" />
+          </div>
+          <h3 class="text-xl font-medium mb-4">Cohérence Cardiaque</h3>
+          <p class="text-gray-600 mb-6">
+            Découvrez cette technique respiratoire puissante pour votre équilibre 
+            physiologique et émotionnel.
+          </p>
+          <a href="/services/coherence-cardiaque" class="text-teal-600 hover:text-teal-700">
+            En savoir plus →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Témoignages -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl text-center mb-12">Ce qu'en disent mes clients</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <blockquote class="p-6 bg-gray-50 rounded-lg">
+          <p class="italic text-gray-600 mb-4">
+            "Les séances avec Johanne m'ont permis de retrouver un sommeil de qualité. 
+            Sa bienveillance et son professionnalisme sont remarquables."
+          </p>
+          <footer class="text-gray-500">
+            — Marie L.
+          </footer>
+        </blockquote>
+        
+        <blockquote class="p-6 bg-gray-50 rounded-lg">
+          <p class="italic text-gray-600 mb-4">
+            "Grâce à la sophrologie, j'ai appris à gérer mon stress au travail. 
+            Les techniques apprises me servent au quotidien."
+          </p>
+          <footer class="text-gray-500">
+            — Pierre M.
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section class="py-20 px-4 bg-teal-600 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl mb-6">Prêt à commencer votre voyage vers le mieux-être ?</h2>
+      <p class="text-xl mb-8">
+        Prenez rendez-vous pour une première séance découverte
+      </p>
+      <a 
+        href="/contact" 
+        class="inline-block px-8 py-4 bg-white text-teal-600 rounded-full hover:bg-gray-100 transition-colors duration-300"
+      >
+        Prendre rendez-vous
+      </a>
+    </div>
+  </section>
+</main>
+</Layouts>
