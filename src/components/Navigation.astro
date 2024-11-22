@@ -2,12 +2,16 @@
 // src/components/Navigation.astro
 const menuItems = [
   {
-    title: "Services",
-    path: "/services",
-  },
-  {
     title: "À propos",
     path: "/about",
+  },  
+  {
+    title: "Sophrologie",
+    path: "/sophro",
+  },
+  {
+    title: "Services",
+    path: "/services",
   },
   {
     title: "Modalités",
@@ -37,7 +41,7 @@ const menuItems = [
             <div class="relative group">
               <a
                 href={item.path}
-                class="py-4 px-3 text-gray-700 hover:text-teal-600 transition duration-300"
+                class="py-4 px-3 text-gray-700 hover:text-purple-400 transition duration-300"
               >
                 {item.title}
               </a>
@@ -50,7 +54,7 @@ const menuItems = [
       <div class="hidden md:flex items-center">
         <a
           href="/contact"
-          class="px-4 py-2 bg-teal-600 text-white rounded-full hover:bg-teal-700 transition duration-300"
+          class="px-4 py-2 bg-purple-400 text-white rounded-full hover:bg-purple-600 transition duration-300"
         >
           Prendre RDV
         </a>
@@ -74,7 +78,7 @@ const menuItems = [
         <div>
           <a
             href={item.path}
-            class="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition duration-300"
+            class="block px-3 py-2 text-gray-700 hover:bg-purple-100 hover:text-purple-700 transition duration-300"
           >
             {item.title}
           </a>
