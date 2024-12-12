@@ -13,7 +13,7 @@ const contactInfo = [
   description="Contactez Johanne Chieu pour toute demande de rendez-vous ou de renseignement sur les séances de sophrologie."
 >
   <!-- Header Section -->
-  <div class="relative py-20 bg-gray-100">
+  <div class="relative py-20 bg-gradient-to-b from-purple-100 to-blue-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-4xl font-light mb-4">Contactez-moi</h1>
       <p class="text-lg text-gray-600">
@@ -24,20 +24,6 @@ const contactInfo = [
 
   <!-- Contact Information Section -->
   <div class="md:flex m-10">
-    <section class="py-16 bg-purple-100 md:rounded-l-lg md:mr-8 rounded-lg md:w-2/5 md:mb-0 mb-8">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-light mb-8">Johanne Chieu</h2>
-        <div class="grid gap-6 md:grid-cols-1 lg:grid-rows-3 text-center">
-          {contactInfo.map(info => (
-            <div class="bg-white p-6 rounded-lg shadow-md">
-              <h3 class="text-blue-400 font-semibold mb-2">{info.method}</h3>
-              <p class="text-gray-600">{info.details}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
   <!-- Contact Form Section -->
     <section class="py-16 bg-gray-100 flex-none md:w-3/5 md:rounded-r-lg rounded-lg">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -94,6 +80,19 @@ const contactInfo = [
         </form>
       </div>
     </section>
+    <section class="py-16 bg-purple-100 md:rounded-l-lg md:mr-8 rounded-lg md:w-2/5 md:mb-0 mb-8">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-light mb-8">Johanne Chieu</h2>
+        <div class="grid gap-6 md:grid-cols-1 lg:grid-rows-3 text-center">
+          {contactInfo.map(info => (
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-blue-400 font-semibold mb-2">{info.method}</h3>
+              <p class="text-gray-600">{info.details}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   </div>  
 
   <!-- Map and Practical Information -->
@@ -115,9 +114,9 @@ const contactInfo = [
   </section>
 
   <div class="md:grid md:grid-cols-2 md:mx-40 mx-10">
-    <div class="mb-8">
-      <img class="pb-4 w-6 h-10" src="images/buslogo.svg" alt="bus_icon">
-      <div class="mb-8 pl-4">  
+    <div class="mb-8 bg-gray-100 rounded-lg p-2 md:mr-2 mr-0 flex items-center">
+      <img class="p-4 w-20 h-20" src="images/buslogo.svg" alt="bus_icon">
+      <div class="pl-4 justify-self-center">  
         <p>
           Lignes 195 et 179 : arrêt Cité jardins – Place des Alliés 
         </p>
@@ -129,8 +128,8 @@ const contactInfo = [
         </p>
       </div>
     </div>
-    <div class="mb-8">
-      <img class="pb-4 w-10 h-10" src="images/Tramlogo.svg" alt="tram_icon">
+    <div class="mb-8 bg-gray-100 rounded-lg p-2 md:ml-2 m-0 flex items-center">
+      <img class="w-16 h-12" src="images/Tramlogo.svg" alt="tram_icon">
       <p class="pl-4">
         Ligne 10 : arrêt Parc des sports
       </p>
