@@ -7,5 +7,5 @@ function sendMail(){
 
     }
     
-    emailjs.send("service_8pv1tkc","template_shcara8",parms).then(alert("Message Envoyé! "))
+    emailjs.send("service_8pv1tkc","template_shcara8",parms).then(alert("Message Envoyé !"))
 }
