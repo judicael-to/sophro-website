@@ -23,21 +23,23 @@ export default function ContactForm() {
 return (
   <form onSubmit={handleSubmit} class="space-y-6">
     <div>
-      <label for="first_name" class="block text-gray-600 mb-2">Nom</label>
+      <label for="name" class="block text-gray-600 mb-2">Nom</label>
       <input 
         id="first_name" 
         name="first_name" 
         required
         class="w-full p-3 border border-gray-300 rounded-lg focus:ring-purple-400 focus:border-purple-400"
+        placeholder="Nom"
       />
     </div>
     <div>
-      <label for="name" class="block text-gray-600 mb-2">Prénom</label>
+      <label for="first_name" class="block text-gray-600 mb-2">Prénom</label>
       <input 
         id="name" 
         name="name" 
         required 
         class="w-full p-3 border border-gray-300 rounded-lg focus:ring-purple-400 focus:border-purple-400"
+        placeholder="Prénom"
       />
     </div>
     <div>
@@ -47,6 +49,7 @@ return (
         name="email" 
         required 
         class="w-full p-3 border border-gray-300 rounded-lg focus:ring-purple-400 focus:border-purple-400"
+        placeholder="Adresse email"
       />
     </div>
     <div>

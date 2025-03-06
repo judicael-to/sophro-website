@@ -23,16 +23,9 @@ const contactInfo = [
     </div>
   </div>
 
+  <div class="my-16 mx-32 flex flex-col md:flex-row bg-gray-200 p-8 rounded-lg shadow-md">
   <!-- Contact Information Section -->
-  <div class="md:flex m-10">
-  <!-- Contact Form Section -->
-    <section class="py-16 bg-gray-100 flex-none md:w-3/5 md:rounded-r-lg rounded-lg">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-light mb-8">Envoyez-moi un message</h2>
-        <ContactForm client:load />
-      </div>
-    </section>
-    <section class="py-16 bg-purple-100 md:rounded-l-lg md:mr-8 rounded-lg md:w-2/5 md:mb-0 mb-8">
+    <section class="py-16 bg-purple-100 md:w-2/5 md:mb-0 mb-8">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-light mb-8">Johanne Chieu</h2>
         <div class="grid gap-6 md:grid-cols-1 lg:grid-rows-3 text-center">
@@ -45,9 +38,16 @@ const contactInfo = [
         </div>
       </div>
     </section>
-  </div>  
+  <!-- Contact Form Section -->
+    <section class="py-16 bg-gray-100 flex-none md:w-3/5">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-light mb-8">Envoyez-moi un message</h2>
+        <ContactForm client:load />
+      </div>
+    </section> 
+  </div>
 
-  <!-- Map and Practical Information -->
+    <!-- Map and Practical Information -->
   <section class="pt-8">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-light mb-8">Plan d'accès</h2>
