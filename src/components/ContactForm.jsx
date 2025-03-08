@@ -28,7 +28,7 @@ return (
         id="first_name" 
         name="first_name" 
         required
-        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-purple-400 focus:border-purple-400"
+        class="w-full p-3 border border-slate-400 rounded-lg focus:ring-violet-300 focus:border-violet-300"
         placeholder="Nom"
       />
     </div>
@@ -38,7 +38,7 @@ return (
         id="name" 
         name="name" 
         required 
-        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-purple-400 focus:border-purple-400"
+        class="w-full p-3 border border-slate-400 rounded-lg focus:ring-violet-300 focus:border-violet-300"
         placeholder="Prénom"
       />
     </div>
@@ -48,8 +48,8 @@ return (
         id="email" 
         name="email" 
         required 
-        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-purple-400 focus:border-purple-400"
-        placeholder="Adresse email"
+        class="w-full p-3 border border-slate-400 rounded-lg focus:ring-violet-300 focus:border-violet-300"
+        placeholder="votre.adresse@example.com"
       />
     </div>
     <div>
@@ -59,7 +59,7 @@ return (
         name="message" 
         rows="6" 
         required 
-        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-purple-400 focus:border-purple-400"
+        class="w-full p-3 border border-slate-400 rounded-lg focus:ring-violet-300 focus:border-violet-300"
       ></textarea>
     </div>
     <div>
