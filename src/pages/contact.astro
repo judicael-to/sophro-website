@@ -23,14 +23,14 @@ const contactInfo = [
     </div>
   </div>
 
-  <div class="my-16 mx-32 flex flex-col md:flex-row bg-blue-100 p-8 rounded-lg shadow-md">
+  <div class="my-16 mx-4 md:mx-32 flex flex-col md:flex-row bg-blue-100 p-4 md:p-8 rounded-lg shadow-md">
   <!-- Contact Information Section -->
-    <section class="py-16 bg-violet-200 md:w-1/5 s5 md:mb-0 mb-8 shadow-md">
+    <section class="py-8 md:py-16 bg-violet-200 md:w-1/5 md:mb-0 mb-8 shadow-md">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-light mb-8">Johanne Chieu</h2>
-        <div class="grid gap-6 md:grid-cols-1 lg:grid-rows-3 text-center">
+        <h2 class="text-2xl md:text-3xl font-light mb-4 md:mb-8">Johanne Chieu</h2>
+        <div class="grid gap-4 md:gap-6 md:grid-cols-1 lg:grid-rows-3 text-center">
           {contactInfo.map(info => (
-            <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="bg-white p-4 md:p-6 rounded-lg shadow-md">
               <h3 class="text-blue-400 font-semibold mb-2">{info.method}</h3>
               <p class="text-gray-600">{info.details}</p>
             </div>
@@ -41,7 +41,7 @@ const contactInfo = [
   <!-- Contact Form Section -->
     <section class="py-1 flex-none md:w-4/5">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-light mb-8">Envoyez-moi un message</h2>
+        <h2 class="text-2xl md:text-3xl font-light mb-4 md:mb-8">Envoyez-moi un message</h2>
         <ContactForm client:load />
       </div>
     </section> 
@@ -65,8 +65,8 @@ const contactInfo = [
     </div>
   </section>
 
-  <div class="md:grid md:grid-cols-2 md:mx-40 mx-10">
-    <div class="mb-8 bg-gray-100 rounded-lg p-2 md:mr-2 mr-0 flex items-center shadow-sm">
+  <div class="md:grid md:grid-cols-2 grid-row md:mx-40 mx-10">
+    <div class="mb-8 bg-gray-100 rounded-lg p-2 md:mr-2 mr-0 flex items-center">
       <img class="p-4 w-20 h-20" src="images/buslogo.svg" alt="bus_icon">
       <div class="pl-4 justify-self-center">  
         <p>
@@ -87,6 +87,7 @@ const contactInfo = [
       </p>
     </div>
   </div>
+  
   <section class="p-0 md:py-24 bg-gradient-to-t from-pink-200 to-blue-200">
     <div class="max-w-4xl mx-auto text-center">
       <a 
