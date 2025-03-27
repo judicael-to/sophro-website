@@ -6,6 +6,7 @@ interface Props {
 
 const { title, description } = Astro.props;
 import Navigation from '../components/Navigation.astro';
+import Analytics from '@vercel/analytics/astro';
 ---
 
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ import Navigation from '../components/Navigation.astro';
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
-
+    <Analytics />
   </head>
   <body>
     <Navigation />

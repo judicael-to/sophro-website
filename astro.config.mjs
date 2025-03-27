@@ -7,4 +7,10 @@ import preact from '@astrojs/preact';
 export default defineConfig({
 	site: 'https://www.votredomaine.fr',
 	integrations: [tailwind(), sitemap(), preact()],
+	output: 'server',
+	adapter: vercel({
+		webAnalytics: {
+		enabled: true, // set to false when using @vercel/analytics@1.4.0
+		},
+	}),
 });
