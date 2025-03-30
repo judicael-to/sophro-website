@@ -1,0 +1,106 @@
+---
+import Layout from '../layouts/Layouts.astro';
+import ContactForm from "../components/ContactForm.jsx";
+
+const contactInfo = [
+  { method: "Adresse", details: "92350 LE PLESSIS ROBINSON" },
+  { method: "Téléphone", details: "07 44 42 67 88" },
+  { method: "Email", details: "Sophro-Qi.JC@outlook.com" }
+];
+---
+
+<Layout 
+  title="Contact | Johanne Chieu - Sophrologue"
+  description="Contactez Johanne Chieu pour toute demande de rendez-vous ou de renseignement sur les séances de sophrologie."
+>
+  <!-- Header Section -->
+  <div class="relative pt-32 pb-16 bg-gradient-to-b from-purple-100 to-blue-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-light mb-4">Contactez-moi</h1>
+      <p class="text-lg text-gray-600">
+        Pour toute demande de rendez-vous ou d’information, n’hésitez pas à me contacter via le formulaire ou par téléphone.
+      </p>
+    </div>
+  </div>
+
+  <div class="my-16 mx-4 md:mx-32 flex flex-col md:flex-row bg-blue-100 p-4 md:p-8 rounded-lg shadow-md">
+  <!-- Contact Information Section -->
+    <section class="py-8 md:py-16 bg-violet-200 md:w-1/5 md:mb-0 mb-8 shadow-md">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-light mb-4 md:mb-8">Johanne Chieu</h2>
+        <div class="grid gap-4 md:gap-6 md:grid-cols-1 lg:grid-rows-3 text-center">
+          {contactInfo.map(info => (
+            <div class="bg-white p-4 md:p-6 rounded-lg shadow-md">
+              <h3 class="text-blue-400 font-semibold mb-2">{info.method}</h3>
+              <p class="text-gray-600">{info.details}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  <!-- Contact Form Section -->
+    <section class="py-1 flex-none md:w-4/5">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-light mb-4 md:mb-8">Envoyez-moi un message</h2>
+        <ContactForm client:load />
+      </div>
+    </section> 
+  </div>
+
+    <!-- Map and Practical Information -->
+  <section class="pt-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-light mb-8">Plan d'accès</h2>
+      <div class="relative h-80 mb-8">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10516.068727517324!2d2.2489352293157974!3d48.781562230336505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67a06ead5503f%3A0xaa437cb9c2fa1ab8!2s92350%20Le%20Plessis-Robinson!5e0!3m2!1sfr!2sfr!4v1743336279027!5m2!1sfr!2sfr"
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          title="Carte d'accès au cabinet"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <div class="md:grid md:grid-cols-2 grid-row md:mx-40 mx-10">
+    <div class="mb-8 bg-gray-100 rounded-lg p-2 md:mr-2 mr-0 flex items-center">
+      <img class="p-4 w-20 h-20" src="images/buslogo.svg" alt="bus_icon">
+      <div class="pl-4 justify-self-center">  
+        <p>
+          Lignes 195 et 179 : arrêt Cité jardins – Place des Alliés 
+        </p>
+        <p>
+          Ligne 390 : arrêt Charles Pasqua 
+        </p>
+        <p>
+          Ligne 395 : arrêt Parc des sports 
+        </p>
+      </div>
+    </div>
+    <div class="mb-8 bg-gray-100 rounded-lg p-2 md:ml-2 m-0 flex items-center shadow-sm">
+      <img class="w-16 h-12" src="images/Tramlogo.svg" alt="tram_icon">
+      <p class="pl-4">
+        Ligne 10 : arrêt Parc des sports
+      </p>
+    </div>
+  </div>
+  
+  <section class="p-0 md:py-24 bg-gradient-to-t from-pink-200 to-blue-200">
+    <div class="max-w-4xl mx-auto text-center">
+      <a 
+          href="/legal-notice" 
+          class="inline-block px-8 py-4 bg-white text-blue-400 rounded-full hover:bg-blue-50 transition-colors duration-300"
+        >
+          Mentions légales
+      </a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Custom Styles */
+  .text-center { text-align: center; }
+</style>
