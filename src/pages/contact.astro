@@ -3,15 +3,15 @@ import Layout from '../layouts/Layouts.astro';
 import ContactForm from "../components/ContactForm.jsx";
 
 const contactInfo = [
-  { method: "Adresse", details: "92350 LE PLESSIS ROBINSON" },
+  { method: "Adresse", details: "11 Rue du Loup Pendu, 92350 LE PLESSIS ROBINSON" },
   { method: "Téléphone", details: "07 44 42 67 88" },
   { method: "Email", details: "Sophro-Qi.JC@outlook.com" }
 ];
 ---
 
 <Layout 
-  title="Contact | Johanne Chieu - Sophrologue"
-  description="Contactez Johanne Chieu pour toute demande de rendez-vous ou de renseignement sur les séances de sophrologie."
+  title="Contact | Johanne CHIEU - Sophrologue"
+  description="Contactez Johanne CHIEU pour toute demande de rendez-vous ou de renseignement sur les séances de sophrologie."
 >
   <!-- Header Section -->
   <div class="relative pt-32 pb-16 bg-gradient-to-b from-purple-100 to-blue-100">
@@ -25,9 +25,9 @@ const contactInfo = [
 
   <div class="my-16 mx-4 md:mx-32 flex flex-col md:flex-row bg-blue-100 p-4 md:p-8 rounded-lg shadow-md">
   <!-- Contact Information Section -->
-    <section class="py-8 md:py-16 bg-violet-200 md:w-1/5 md:mb-0 mb-8 shadow-md">
+    <section class="py-8 md:py-16 bg-violet-200 md:w-2/6 md:mb-0 mb-8 shadow-md">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl md:text-3xl font-light mb-4 md:mb-8">Johanne Chieu</h2>
+        <h2 class="text-2xl md:text-3xl font-light mb-4 md:mb-8">Johanne CHIEU</h2>
         <div class="grid gap-4 md:gap-6 md:grid-cols-1 lg:grid-rows-3 text-center">
           {contactInfo.map(info => (
             <div class="bg-white p-4 md:p-6 rounded-lg shadow-md">
@@ -39,7 +39,7 @@ const contactInfo = [
       </div>
     </section>
   <!-- Contact Form Section -->
-    <section class="py-1 flex-none md:w-4/5">
+    <section class="py-1 flex-none md:w-4/6">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl md:text-3xl font-light mb-4 md:mb-8">Envoyez-moi un message</h2>
         <ContactForm client:load />
