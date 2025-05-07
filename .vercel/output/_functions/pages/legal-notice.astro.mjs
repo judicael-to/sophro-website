@@ -1,7 +1,7 @@
 /* empty css                                 */
-import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_BJqiyw7n.mjs';
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_BlVrh8BZ.mjs';
 import 'kleur/colors';
-import { $ as $$Layouts } from '../chunks/Layouts_CCAdBHQz.mjs';
+import { $ as $$Layouts } from '../chunks/Layouts_DJjIv8ZR.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$LegalNotice = createComponent(($$result, $$props, $$slots) => {
