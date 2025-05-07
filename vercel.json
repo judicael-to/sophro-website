@@ -1,0 +1,7 @@
+{
+    "functions": {
+        "api/_render.js": {
+            "runtime": "nodejs18.x"
+    }
+    }
+}
