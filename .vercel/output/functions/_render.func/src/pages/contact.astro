@@ -3,15 +3,15 @@ import Layout from '../layouts/Layouts.astro';
 import ContactForm from "../components/ContactForm.jsx";
 
 const contactInfo = [
-  { method: "Adresse", details: "92350 LE PLESSIS ROBINSON" },
+  { method: "Adresse", details: "11 Rue du Loup Pendu, 92350 LE PLESSIS ROBINSON" },
   { method: "Téléphone", details: "07 44 42 67 88" },
   { method: "Email", details: "Sophro-Qi.JC@outlook.com" }
 ];
 ---
 
 <Layout 
-  title="Contact | Johanne Chieu - Sophrologue"
-  description="Contactez Johanne Chieu pour toute demande de rendez-vous ou de renseignement sur les séances de sophrologie."
+  title="Contact | Johanne CHIEU - Sophrologue"
+  description="Contactez Johanne CHIEU pour toute demande de rendez-vous ou de renseignement sur les séances de sophrologie."
 >
   <!-- Header Section -->
   <div class="relative pt-32 pb-16 bg-gradient-to-b from-purple-100 to-blue-100">
@@ -25,9 +25,9 @@ const contactInfo = [
 
   <div class="my-16 mx-4 md:mx-32 flex flex-col md:flex-row bg-blue-100 p-4 md:p-8 rounded-lg shadow-md">
   <!-- Contact Information Section -->
-    <section class="py-8 md:py-16 bg-violet-200 md:w-1/5 md:mb-0 mb-8 shadow-md">
+    <section class="py-8 md:py-16 bg-violet-200 md:w-2/6 md:mb-0 mb-8 shadow-md">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl md:text-3xl font-light mb-4 md:mb-8">Johanne Chieu</h2>
+        <h2 class="text-2xl md:text-3xl font-light mb-4 md:mb-8">Johanne CHIEU</h2>
         <div class="grid gap-4 md:gap-6 md:grid-cols-1 lg:grid-rows-3 text-center">
           {contactInfo.map(info => (
             <div class="bg-white p-4 md:p-6 rounded-lg shadow-md">
@@ -39,7 +39,7 @@ const contactInfo = [
       </div>
     </section>
   <!-- Contact Form Section -->
-    <section class="py-1 flex-none md:w-4/5">
+    <section class="py-1 flex-none md:w-4/6">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl md:text-3xl font-light mb-4 md:mb-8">Envoyez-moi un message</h2>
         <ContactForm client:load />
@@ -53,7 +53,7 @@ const contactInfo = [
       <h2 class="text-3xl font-light mb-8">Plan d'accès</h2>
       <div class="relative h-80 mb-8">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10516.068727517324!2d2.2489352293157974!3d48.781562230336505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67a06ead5503f%3A0xaa437cb9c2fa1ab8!2s92350%20Le%20Plessis-Robinson!5e0!3m2!1sfr!2sfr!4v1743336279027!5m2!1sfr!2sfr"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d956.8077453008468!2d2.25483482034942!3d48.777711205466524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67a1df44e6747%3A0x3cb5de6c12332a4d!2s11%20Rue%20du%20Loup%20Pendu%2C%2092350%20Le%20Plessis-Robinson!5e0!3m2!1sfr!2sfr!4v1731577975513!5m2!1sfr!2sfr"
           width="100%" 
           height="100%" 
           style="border:0;" 
