@@ -6,7 +6,7 @@ import preact from '@astrojs/preact';
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
-	site: 'https://www.votredomaine.fr',
+	site: 'https://www.johannechieu.com',
 	integrations: [tailwind(), sitemap(), preact()],
 	output: 'server',
 	adapter: vercel({
