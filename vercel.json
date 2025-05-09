@@ -1,9 +1,9 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "./vercel-build.sh",
   "devCommand": "npm run dev",
   "framework": "astro",
   "functions": {
-    "api/**/*": {
+    "**/*.func": {
       "runtime": "nodejs20.x"
     }
   }

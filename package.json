@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "NODEJS_VERSION=20.x astro check && NODEJS_VERSION=20.x astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
