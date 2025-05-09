@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import preact from '@astrojs/preact';
-import vercel from '@astrojs/vercel';
+import vercel from '@astrojs/vercel/serverless';
 
 export default defineConfig({
 	site: 'https://www.johannechieu.com',
@@ -13,6 +13,6 @@ export default defineConfig({
 		webAnalytics: {
 		enabled: false, // set to false when using @vercel/analytics@1.4.0
 		},
-		runtime: 'nodejs18.x',
+		runtime: 'nodejs20.x',
 	}),
 });
