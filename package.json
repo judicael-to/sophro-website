@@ -2,12 +2,16 @@
   "name": "my-sophro-website",
   "type": "module",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "NODEJS_VERSION=18.x astro check && NODEJS_VERSION=18.x astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "clean": "rm -rf dist/ .vercel/output/ node_modules/.cache/"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
