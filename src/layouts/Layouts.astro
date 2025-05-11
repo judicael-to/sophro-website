@@ -1,0 +1,41 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+import Navigation from '../components/Navigation.astro';
+import Analytics from '@vercel/analytics/astro';
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg"/>
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <Analytics />
+  </head>
+  <body>
+    <Navigation />
+    <main class="pt-16">
+      <slot />
+    </main>  
+  </body>
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Engagement&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Engagement&display=swap');
+  *{
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+</style>
