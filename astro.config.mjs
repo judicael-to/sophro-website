@@ -12,6 +12,9 @@ export default defineConfig({
 	adapter: vercel({
 		webAnalytics: {
 		enabled: true, // set to false when using @vercel/analytics@1.4.0
+		functionPerRoute: false,
+		// IMPORTANT : Forcer Node.js 20
+		runtime: 'nodejs20.x'
 		},
 	}),
 	build: {
