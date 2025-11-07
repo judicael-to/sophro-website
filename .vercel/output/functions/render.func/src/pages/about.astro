@@ -1,0 +1,200 @@
+---
+// src/pages/about.astro
+import Layout from '../layouts/Layouts.astro';
+
+const certifications = [
+  { title: "Bien vieillir"},
+  { title: "Maternité et sophrologie"},
+  { title: "Stress et périnatalité"},
+  { title: "Emotions et sophrologie"},
+  { title: "Comprendre et réguler les émotions"},
+  { title: "Respiration et Présence à soi"},
+  { title: "Education thérapeutique et pratique respiratoire en sophrologie"},
+  { title: "Confiance en soi"},
+  { title: "Sommeil"},
+  { title: "Cohérence cardiaque respiratoire"},
+  { title: "Evaluation Simplifiée de la Variabilité de la Fréquence Cardiaque"},
+  { title: "Techniques d'auto-ajustement corporel"},
+  { title: "Accompagnement de la maladie par la sophrologie"}
+];
+---
+
+<Layout 
+  title="À propos | Johanne CHIEU - Sophrologue"
+  description="Découvrez mon parcours, ma philosophie et mon approche de la sophrologie."
+>
+  <!-- Hero Section -->
+
+  <div class="relative pt-20 bg-gradient-to-b from-fuchsia-100 to-blue-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <h1 class="text-4xl font-light mb-6">À propos de moi</h1>
+          <p class="text-lg text-gray-600 mb-4">
+            Sophrologue certifiée RNCP, je vous accompagne dans votre quête de méthodes pour améliorer votre existence au quotidien et acquérir un mieux-être.
+          </p>
+        </div>
+        <div class="md:w-1/2 pb-8">
+          <img
+            src="images/Photo_A_Propos.JPEG"
+            class="rounded-lg shadow-lg"
+            width="800"
+            decoding="async"
+            loading="lazy"
+            alt="Espace de consultation"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Parcours Professionnel -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-light mb-8">Mon parcours professionnel</h2>
+      <div class="prose prose-lg max-w-none">
+        <p class="mb-6">
+          Vingt-cinq années d’activité professionnelle en entreprise, dont dix ans dans le
+          département des ressources humaines, m’ont amenée à me tourner vers une voie
+          permettant de préserver la santé et de mieux gérer les pressions professionnelles et les
+          exigences du monde de l’entreprise tout en améliorant la capacité de performance et
+          maximisant l’efficacité.
+        </p>
+        <p class="mb-6">
+          Face aux pressions imposées aux salariés pour atteindre les objectifs de l’entreprise et les
+          évaluations de performance des salariés en contrepartie des primes allouées. Cette
+          pratique ne correspondait pas à mes aspirations d’une vie sereine et d’une bonne santé.
+          J’ai pris le temps pour trouver le sens profond de mon existence. Après réflexion, j’en conclus
+          qu’il est primordial pour moi, de préserver ma santé pour vivre mieux et bien vieillir.
+        </p>
+        <p class="mb-6">
+          La pratique régulière du yoga, de la méditation, de la respiration consciente au quotidien,
+          du qi gong, techniques douces et complètes basées sur la respiration, la concentration, les
+          mouvements du corps. Ce sont des pratiques permettant de renforcer l’activité du système
+          parasympathique, abaisser le rythme cardiaque et la pression artérielle, également
+          favoriser un vieillissement harmonieux.
+        </p>
+        <p class="mb-6">
+          Ainsi en exerçant une présence à ma respiration et à mon corps, je pacifie mon esprit.
+          Cette activité régulière contribue à mon mieux-être, je deviens plus résistante au stress,
+          plus confiante en moi, plus sereine.
+        </p>
+        <p >
+          Ensuite dans la continuité de mes pratiques. J’ai entrepris une reconversion
+          professionnelle. Je me suis formée en sophrologie durant 15 mois, à l’Académie de
+          Sophrologie de Paris 15 e . J’ai obtenu la certification professionnelle RNCP Sophrologue en juin 2024.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approche -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-light mb-8">Mon approche</h2>
+      <div class="space-y-6 text-gray-600">
+        <blockquote class="border-l-4 border-purple-400 pl-4 italic">
+          "Et si tu améliores le présent, ce qui viendra ensuite sera également meilleur."<br/>— Paulo Coelho
+        </blockquote>
+        <p>
+          Avec la sophrologie, j’apprends à accueillir les choses comme elles viennent sans
+          interpréter, sans jugement. Cette attitude permet de m’alléger, de gagner du temps dans
+          ma vie quotidienne. Ainsi, je peux me focaliser sur les choses agréables. En même temps,
+          j’apprends à mon corps de s’orienter vers ce qui va bien, et non pas le contraire. Ce qui
+          me permet de cultiver la bienveillance envers moi-même.
+        </p>
+        <p>
+          La sophrologie me donne des méthodes et des outils basés sur la respiration spécifique,
+          la concentration et les mouvements corporels pour :
+        </p>
+        <ul class="list-disc ml-10">
+          <li>évacuer les tensions et toutes gênes physiques ;</li>
+          <li>mettre à distance les pensées intrusives et m’affirmer ;</li>
+          <li>développer mes capacités à prendre soin du stress et l’anxiété, des émotions, des
+            douleurs chroniques et des migraines ;</li>
+          <li>trouver en moi ma force vitale pour affronter des difficultés de la vie.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications et Formations -->
+  <section class="py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-light mb-8">Certifications et formations</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl mb-4 text-blue-400">Certification principale</h3>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <p class="text-lg">Sophrologue certifiée RNCP
+            </p>
+            <p class="text-gray-600 font-xs">Enregistrée au Répertoire National des Certifications
+              Professionnelles par France compétences
+            </p>
+            <p class="text-gray-600 mt-2">À l'<strong>Académie de Sophrologie de Paris</strong>, 2023/2024</p>
+            <img class="w-10 h-16" src="images/logo-aca.png" />
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl mb-0 text-blue-400">Formations de perfectionnement</h3>
+          <p class="mb-4 text-gray-400">Académie de Sophrologie Paris ; Equilibios</p>
+          <div class="bg-white p-6 rounded-lg shadow">
+              <ul class="space-y-3">
+              {certifications.map(cert => (
+                <li class="flex justify-between items-center">
+                  <span>{cert.title}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photos du Cabinet -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-light mb-8">Mon cabinet</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="relative h-80">
+          <img
+            src="images/cabinet-1.avif"
+            class="rounded-lg shadow-lg object-cover w-full h-full"
+            width="600"
+            height="400"
+            decoding="async"
+            loading="lazy"
+            alt="Espace de consultation"
+          />
+        </div>
+        <div class="md:col-span-2 mt-4">
+          <p class="text-center text-gray-600">
+            Un espace chaleureux et apaisant, conçu pour votre bien-être, 
+            situé au Plessis Robinson.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="">
+    <div class="overflow-hidden">
+      <img
+      src="images/Photo_pied_page_1.jpg"
+      class="object-cover h-56 w-full"
+      decoding="async"
+      loading="lazy"
+      alt="Photo pied de page"
+      />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Ajoutez des animations si souhaité */
+  .prose p {
+    line-height: 1.8;
+  }
+</style>
